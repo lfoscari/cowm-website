@@ -32,7 +32,7 @@ function scssTask() {
         .pipe(sass()) // compile SCSS to CSS
         .pipe(postcss([autoprefixer(), cssnano()])) // PostCSS plugins
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
-        .pipe(dest('dist')); // put final CSS in dist folder
+        .pipe(dest('docs')); // put final CSS in dist folder
 }
 
 // JS task: concatenates and uglifies JS files to script.js
@@ -43,7 +43,7 @@ function jsTask() {
         ])
         .pipe(concat('magic.js'))
         // .pipe(uglify())
-        .pipe(dest('dist'));
+        .pipe(dest('docs'));
 }
 
 // Cachebust
