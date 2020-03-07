@@ -43,11 +43,11 @@ a {
     }
 
     &:hover {
-        text-decoration: line-through;
+        text-decoration: none;
     }
 
     &.github {
-        color: #24292e;
+        color: rgb(36, 41, 46);
     }
 
     &.reddit {
